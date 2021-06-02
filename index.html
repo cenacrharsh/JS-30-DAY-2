@@ -63,6 +63,9 @@
         transition: all 0.05s;
         transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
       }
+      .bypass {
+        transition: all 0s;
+      }
     </style>
 
     <script>
@@ -74,6 +77,8 @@
         const now = new Date();
 
         const seconds = now.getSeconds();
+        if (seconds === 0) secondHand.classList.add("bypass");
+        if (seconds === 1) secondHand.classList.remove("bypass");
         const secondsDegrees = (seconds / 60) * 360 + 90;
         secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
