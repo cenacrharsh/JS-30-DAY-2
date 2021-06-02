@@ -4,7 +4,7 @@
 
 > I learned how to get time from JS using Date() and how to add a clock ticking effect using transition timing function.
 
-### ✨ [Click here for Demo]()
+### ✨ [Click here for Demo](https://cenacrharsh.github.io/JS-30-DAY-2/)
 
 ##
 
